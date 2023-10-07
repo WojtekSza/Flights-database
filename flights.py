@@ -37,7 +37,7 @@ with DAG(
         db_params = {
             'dbname': 'flights',
             'user': 'reader',
-            'password': 'reader',
+            'password': '***',
             'host': '3.126.41.236',  # or the hostname of your PostgreSQL server
             'port': '5432',       # default PostgreSQL port
         }
