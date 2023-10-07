@@ -11,7 +11,7 @@ from airflow.decorators import task
 
 
 with DAG(
-    dag_id="Flights Database",
+    dag_id="flights_database",
     schedule=None,
     start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
     catchup=False,
