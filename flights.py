@@ -17,11 +17,8 @@ with DAG(
     catchup=False,
     tags=["example"],
 ) as dag:
-
-    # [START howto_operator_python]
     @task(task_id="print_the_context")
     def print_context():
         print("test")
         return "Whatever you return gets printed in the logs"
-
     run_this = print_context()
